@@ -1,3 +1,5 @@
+
+
 class Room:
     def __init__(self, input_name, input_capacity, input_fee):
         self.name = input_name
@@ -37,9 +39,7 @@ class Room:
             self.remove_from_queue(guest)
             self.check_in_guest(guest)
 
-    def favourite_song(self,guest):
-        for guest in guest:
-            if song in song
+    
         
         
 

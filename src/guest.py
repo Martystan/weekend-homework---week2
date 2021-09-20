@@ -1,6 +1,9 @@
 
 
 
+
+
+
 class Guest:
     def __init__(self, input_name, input_wallet, input_favourite_song):
         self.name = input_name
@@ -13,9 +16,12 @@ class Guest:
     def pays(self, room):
         self.wallet -= room.fee   
 
-    # def favourite_song_on_the_list(self,song):
-    #     if song == self.favourite_song:
-    #         return "Whoo!"
+    # def is_favourite_song_on_the_list(self,song):
+    #     for item in song:
+    #         if item.title == self.favourite_song:
+    #             return "Whoo!"
+        
+
 
 
     

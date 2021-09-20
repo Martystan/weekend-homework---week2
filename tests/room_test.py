@@ -23,6 +23,8 @@ class TestRoom(unittest.TestCase):
         self.song_5 = Song("Baby got back")
         self.song_5 = Song("Space oddity")
 
+        
+
     def test_room_has_name(self):
         self.assertEqual("Friends Karaoke", self.room.name)
     
@@ -42,6 +44,15 @@ class TestRoom(unittest.TestCase):
             self.room.guest_can_enter(self.guest_1)
             self.assertEqual(1, len(self.room.guest))
             self.assertEqual(0, len(self.room.queue))
+
+    # def test_if_favourite_song(self):
+    #     self.room.add_song(self.song_1)
+    #     self.room.add_song(self.song_2)
+    #     self.room.add_song(self.song_3)
+    #     self.guest_1.is_favourite_song_on_the_list(self)
+
+        
+        
         
     
 
