@@ -16,10 +16,10 @@ class Guest:
     def pays(self, room):
         self.wallet -= room.fee   
 
-    # def is_favourite_song_on_the_list(self,song):
-    #     for item in song:
-    #         if item.title == self.favourite_song:
-    #             return "Whoo!"
+    def is_favourite_song_on_the_list(self,song):
+        for item in song:
+            if item.title == self.favourite_song:
+                return "Whoo!"
         
 
 

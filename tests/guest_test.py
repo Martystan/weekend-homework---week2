@@ -34,10 +34,10 @@ class TestGuest(unittest.TestCase):
         self.guest_1.pays(self.room)
         self.assertEqual(10.00, self.guest_1.wallet)
 
-    # def test_if_favourite_song_on_the_list(self):
-    #     self.room.song = [self.song_1,self.song_2,self.song_3]
-    #     self.guest_1.is_favourite_song_on_the_list(self.room.song)
-    #     # self.assertEqual("Whoo", self.guest_1.is_favourite_song_on_the_list(self.room.song))
+    def test_if_favourite_song_on_the_list(self):
+        songs = [self.song_1,self.song_2,self.song_3]
+        
+        self.assertEqual("Whoo!", self.guest_1.is_favourite_song_on_the_list(songs))
 
 
     
